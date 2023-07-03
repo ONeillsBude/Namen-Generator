@@ -31,7 +31,7 @@ class NameGeneratorApp:
         self.gender_var.set("Männlich")
         self.update_files()
         
-        self.version_label = ttk.Label(self.root, text="0.1.2.0", foreground="gray", font=("Arial", 10))
+        self.version_label = ttk.Label(self.root, text="0.1.2.1", foreground="gray", font=("Arial", 10))
         self.version_label.place(x=window_width-80, y=window_height-30)
         
         root.resizable(False, False)
@@ -206,7 +206,7 @@ class NameGeneratorApp:
         self.last_name_entry.bind("<Return>", lambda event: self.save_names())
 
 root = tk.Tk()
-window_width = 400
+window_width = 420
 window_height = 250
 screen_width = root.winfo_screenwidth()
 screen_height = root.winfo_screenheight()
